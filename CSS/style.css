@@ -1,50 +1,50 @@
 :root {
-    --h1-color: #172b4d;
-    --h2-color: #6070ff;
-    --white-color: #444;
-    --black-color: #000;
-    --html-color: #602;
-    --body-color: #760;
-    --color1-color: greenyellow;
-    --color2-color: #0ff;
-    --p-color: #344563;
-    --bg-color: #e5e5e5;
-    --red: #f00;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: #f7f7f9;
-    overflow-x: hidden;
-  }
-  
-  #body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #f7f7f9;
-    width: 100%;
-    height: auto;
-    overflow-x: auto;
-  }
+  --h1-color: #172b4d;
+  --h2-color: #6070ff;
+  --white-color: #444;
+  --black-color: #000;
+  --html-color: #602;
+  --body-color: #760;
+  --color1-color: greenyellow;
+  --color2-color: #0ff;
+  --p-color: #344563;
+  --bg-color: #e5e5e5;
+  --red: #f00;
+}
 
-  .section-body2 {
-    background-color: #000;
-    background-image: radial-gradient(#333 10%, transparent 11%), radial-gradient(#272a31 10%, transparent 11%);
-    background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;
-    background-repeat: repeat;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #f7f7f9;
+  overflow-x: hidden;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f7f9;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+}
+
+.section-body2 {
+  background-color: #000;
+  background-image: radial-gradient(#333 10%, transparent 11%), radial-gradient(#272a31 10%, transparent 11%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  background-repeat: repeat;
+}
 
 .body2-div {
   opacity: 1;
@@ -65,5 +65,5 @@ hr {
 }
 
 .middle-hr {
-border: 1px solid #d3d3d3;
+  border: 1px solid #d3d3d3;
 }
