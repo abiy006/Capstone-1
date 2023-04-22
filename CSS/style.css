@@ -229,7 +229,7 @@ hr {
 }
 
 #body1-txt2 {
-  background-image: url("./Images/red2.jpg");
+  background-image: url("../Images/red2.jpg");
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -279,13 +279,13 @@ hr {
 }
 
 #mobileMenuid {
-  background-image: url("./Images/concert-menu.jpg");
+  background-image: url("../Images/concert-menu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #section-body1-id {
-  background-image: url("./Images/landing_desktop.svg");
+  background-image: url("../Images/landing_desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
