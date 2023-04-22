@@ -326,12 +326,12 @@ function fillMainProgram(incomDiv, proName, proImg, proDesc) {
   body2Div.style.backgroundColor = '#272a31';
   body2Div.style.height = '100%';
   body2Div.style.opacity = '0.8';
-  body2Div.onmouseover = function()
-  {
+
+  body2Div.onmouseover = function () {
     body2Div.style.border = '1px solid white';
   };
-  body2Div.onmouseout = function()
-  {
+
+  body2Div.onmouseout = function () {
     body2Div.style.border = '1px solid #272a31';
   };
 

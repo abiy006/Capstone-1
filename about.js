@@ -5,7 +5,6 @@ aboutNavLink.addEventListener('click', () => {
   window.location.href = '/index.html';
 });
 
-
 const bodySection = document.createElement('section');
 bodySection.style.display = 'flex';
 bodySection.style.flexDirection = 'column';
