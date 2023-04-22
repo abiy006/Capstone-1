@@ -1,3 +1,177 @@
+@media (width >= 768px) {
+  #section-header-desktop-id {
+    display: flex;
+  }
+
+  #section-header-mobile-id {
+    display: none;
+  }
+
+  #body2-div1-id {
+    flex-direction: row;
+    width: 15%;
+  }
+
+  #body2-div-id {
+    flex-direction: column;
+    width: 15%;
+  }
+
+  #body2-txt1-see1 {
+    display: flex;
+  }
+
+  #body2-txt1-see2 {
+    display: none;
+  }
+
+  #section3-div-id {
+    flex-direction: row;
+  }
+
+  .seaction3-each-div {
+    width: 40%;
+  }
+
+  #section3-bottom-div-id {
+    display: none;
+  }
+
+  #section2-part2-Level2-id {
+    flex-direction: row;
+  }
+
+  #section2-part2-Level2-div1-id {
+    width: 30%;
+  }
+
+  #section2-part2-Level2-div2-id {
+    width: 30%;
+  }
+
+  #section-footer-id {
+    display: flex;
+    background-color: #272a31;
+  }
+
+  #footer2-div1-txt {
+    color: #fff;
+  }
+
+  #footer2-div2-txt1 {
+    color: #fff;
+  }
+
+  #footer2-div2-txt2 {
+    color: #fff;
+  }
+
+  #section-footer-part1-about-id {
+    display: none;
+  }
+
+  #footer2-div2-txt2-id {
+    color: #fff;
+  }
+
+  #footer2-div2-txt1-id {
+    color: #fff;
+  }
+
+  #footer2-div1-txt-id {
+    color: #fff;
+  }
+}
+
+@media (width < 768px) {
+  #section-header-desktop-id {
+    display: none;
+  }
+
+  #section-header-mobile-id {
+    display: flex;
+  }
+
+  #body2-div1-id {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #body2-div-id {
+    flex-direction: row;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+  }
+
+  #body2-txt1-see1 {
+    display: none;
+  }
+
+  #body2-txt1-see2 {
+    display: flex;
+  }
+
+  #section3-div-id {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .seaction3-each-div {
+    width: 100%;
+  }
+
+  #section3-bottom-div-id {
+    display: flex;
+  }
+
+  #section2-part2-Level2-id {
+    flex-direction: column;
+  }
+
+  #section2-part2-Level2-div1-id {
+    width: 80%;
+  }
+
+  #section2-part2-Level2-div2-id {
+    width: 80%;
+  }
+
+  #section-footer-id {
+    display: none;
+    background-color: #fff;
+  }
+
+  #footer2-div1-txt {
+    color: #272a31;
+  }
+
+  #footer2-div2-txt1 {
+    color: #272a31;
+  }
+
+  #footer2-div2-txt2 {
+    color: #272a31;
+  }
+
+  #section-footer-part1-about-id {
+    display: flex;
+  }
+
+  #footer2-div2-txt2-id {
+    color: #272a31;
+  }
+
+  #footer2-div2-txt1-id {
+    color: #272a31;
+  }
+
+  #footer2-div1-txt-id {
+    color: #272a31;
+  }
+}
+
 :root {
   --h1-color: #172b4d;
   --h2-color: #6070ff;
@@ -7,7 +181,7 @@
   --body-color: #760;
   --color1-color: greenyellow;
   --color2-color: #0ff;
-  --p-color: #344563;
+  --cap-color-red: #ec5242;
   --bg-color: #e5e5e5;
   --red: #f00;
 }
@@ -54,7 +228,7 @@ hr {
   border: 1px solid #f00;
 }
 
-.body1-txt2 {
+#body1-txt2 {
   background-image: url("../Images/red2.jpg");
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -66,4 +240,52 @@ hr {
 
 .middle-hr {
   border: 1px solid #d3d3d3;
+}
+
+.blur {
+  filter: blur(8px);
+}
+
+.mobile-menu-page-class {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.mobile-menu-close-class {
+  width: 7%;
+  margin-top: 3rem;
+  margin-left: 80%;
+  color: var(--cap-color-red);
+}
+
+.mobile-menu-page-class ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: start;
+}
+
+.mobile-menu-page-class ul li a {
+  text-decoration: none;
+  color: var(--cap-color-red);
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+#mobileMenuid {
+  background-image: url("../Images/concert-menu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section-body1-id {
+  background-image: url("../Images/landing_desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

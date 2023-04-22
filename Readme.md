@@ -40,6 +40,8 @@
 **[Abiy-Portfolio]** This is a capstone created during my Microverse course. 
 The capstone is able to function (responsive to) both on the mobile and desktop version.
 
+- [Project Description Link](https://www.loom.com/share/4d72f614a9334efc9e8d2958394eafa6)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
