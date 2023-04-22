@@ -3,18 +3,51 @@ import data3 from './data2.js';
 
 const body = document.getElementById('body');
 
+const homeNavLink = document.getElementById('home-nav-link');
+homeNavLink.addEventListener('click', () => {
+  window.location.href = '/about.html';
+});
+
 const bodySection = document.createElement('section');
 bodySection.style.display = 'flex';
 bodySection.style.flexDirection = 'column';
 bodySection.setAttribute('class', 'section-view-port');
+bodySection.setAttribute('id', 'section-view-port-id');
 bodySection.style.backgroundColor = '#aaa';
 bodySection.style.width = '100%';
-// bodySection.style.height = '100vh';
+
+const sectionMobileHeader = document.createElement('section');
+sectionMobileHeader.style.flexDirection = 'column';
+sectionMobileHeader.setAttribute('class', 'section-mobile-header');
+sectionMobileHeader.setAttribute('id', 'section-header-mobile-id');
+sectionMobileHeader.style.height = '10rem';
+sectionMobileHeader.style.backgroundColor = '#fff';
+
+const navMobile = document.createElement('nav');
+navMobile.style.display = 'flex';
+navMobile.style.justifyContent = 'start';
+navMobile.style.alignItems = 'center';
+navMobile.setAttribute('class', 'header-mobile-nav');
+navMobile.setAttribute('id', 'mobileMenuid');
+navMobile.style.width = '100%';
+navMobile.style.height = '100%';
+navMobile.style.backgroundColor = '#fff';
+
+const headerMobile = document.createElement('img');
+headerMobile.style.display = 'flex';
+headerMobile.setAttribute('class', 'header-mobile-img');
+headerMobile.src = './Images/menu.svg';
+headerMobile.style.height = '15%';
+headerMobile.style.margin = '2rem';
+navMobile.appendChild(headerMobile);
+sectionMobileHeader.appendChild(navMobile);
+
+body.appendChild(sectionMobileHeader);
 
 const sectionHeader = document.createElement('section');
-sectionHeader.style.display = 'flex';
 sectionHeader.style.flexDirection = 'column';
 sectionHeader.setAttribute('class', 'section-header');
+sectionHeader.setAttribute('id', 'section-header-desktop-id');
 sectionHeader.style.height = '20%';
 sectionHeader.style.backgroundColor = '#fff';
 
@@ -138,7 +171,6 @@ for (let i = 0; i < 6; i += 1) {
   if (i === 0) {
     headerBottomUlLi.textContent = 'About';
     headerBottomUlLi.style.color = '#ec5242';
-
     headerBottomUlLi.addEventListener('click', () => {
       window.location.href = '/about.html';
     });
@@ -167,6 +199,7 @@ bodySection.appendChild(sectionHeader);
 const body1Section = document.createElement('section');
 body1Section.style.display = 'flex';
 body1Section.setAttribute('class', 'section-body1');
+body1Section.setAttribute('id', 'section-body1-id');
 body1Section.style.backgroundColor = '#d3d3d3';
 
 const body1div1 = document.createElement('div');
@@ -178,6 +211,7 @@ body1div1.setAttribute('class', 'body1-div1');
 const body1txt1 = document.createElement('p');
 body1txt1.style.display = 'flex';
 body1txt1.setAttribute('class', 'body1-txt1');
+body1txt1.setAttribute('id', 'body1-txt1');
 body1txt1.textContent = '"Hello! Sharing world"';
 body1txt1.style.color = '#ec5242';
 body1txt1.style.marginTop = '5%';
@@ -187,9 +221,10 @@ body1txt1.style.fontSize = '2rem';
 body1txt1.style.fontWeight = '400';
 body1div1.appendChild(body1txt1);
 
-const body1txt2 = document.createElement('p');
+const body1txt2 = document.createElement('h1');
 body1txt2.style.display = 'flex';
 body1txt2.setAttribute('class', 'body1-txt2');
+body1txt2.setAttribute('id', 'body1-txt2');
 body1txt2.textContent = 'Creative commons global summit 2015';
 body1txt2.style.color = '#ec5242';
 body1txt2.style.fontFamily = 'COCOGOOSE, sans-serif';
@@ -197,6 +232,7 @@ body1txt2.style.marginRight = '47%';
 body1txt2.style.marginLeft = '10%';
 body1txt2.style.fontSize = '3rem';
 body1txt2.style.fontWeight = '700';
+body1txt2.style.minWidth = '280px';
 body1txt2.style.fontStyle = 'bold';
 body1txt2.style.textTransform = 'uppercase';
 body1div1.appendChild(body1txt2);
@@ -254,7 +290,6 @@ body2Section.style.alignItems = 'center';
 body2Section.style.flexDirection = 'column';
 body2Section.setAttribute('class', 'section-body2');
 body2Section.style.width = '100%';
-// body2Section.style.height = '60vh';
 
 const body2txt1 = document.createElement('p');
 body2txt1.style.display = 'flex';
@@ -281,16 +316,24 @@ body2div1.style.justifyContent = 'center';
 body2div1.style.alignItems = 'center';
 body2div1.style.gap = '0.5rem';
 body2div1.setAttribute('class', 'body2-div1');
+body2div1.setAttribute('id', 'body2-div1-id');
 
 function fillMainProgram(incomDiv, proName, proImg, proDesc) {
   const body2Div = document.createElement('div');
   body2Div.style.display = 'flex';
-  body2Div.style.flexDirection = 'column';
   body2Div.setAttribute('class', 'body2-div');
+  body2Div.setAttribute('id', 'body2-div-id');
   body2Div.style.backgroundColor = '#272a31';
   body2Div.style.height = '100%';
   body2Div.style.opacity = '0.8';
-  body2Div.style.width = '15%';
+
+  body2Div.onmouseover = function () {
+    body2Div.style.border = '1px solid white';
+  };
+
+  body2Div.onmouseout = function () {
+    body2Div.style.border = '1px solid #272a31';
+  };
 
   const body2Divtxt1 = document.createElement('p');
   body2Divtxt1.style.display = 'flex';
@@ -298,8 +341,9 @@ function fillMainProgram(incomDiv, proName, proImg, proDesc) {
   body2Divtxt1.setAttribute('class', 'body2-div-txt1');
   body2Divtxt1.textContent = proName;
   body2Divtxt1.style.color = '#ec5242';
-  body2Divtxt1.style.fontFamily = 'Lato, sans-serif';
+  body2Divtxt1.style.fontFamily = 'COCOGOOSE, sans-serif';
   body2Divtxt1.style.fontSize = '1rem';
+  body2Divtxt1.style.margin = '2rem';
   body2Divtxt1.style.fontStyle = 'normal';
 
   const body2Divtxt2 = document.createElement('p');
@@ -335,9 +379,9 @@ for (let i = 0; i < data1.length; i += 1) {
 }
 
 const body2txt2 = document.createElement('p');
-body2txt2.style.display = 'flex';
 body2txt2.style.justifyContent = 'center';
 body2txt2.setAttribute('class', 'body2-txt1');
+body2txt2.setAttribute('id', 'body2-txt1-see1');
 body2txt2.textContent = 'See the whole program';
 body2txt2.style.color = '#fff';
 body2txt2.style.fontFamily = 'Lato, sans-serif';
@@ -349,10 +393,26 @@ body2txt2.style.marginTop = '2%';
 body2txt2.style.fontSize = '1rem';
 body2txt2.style.fontStyle = 'normal';
 
+const body2txt22 = document.createElement('p');
+body2txt22.style.justifyContent = 'center';
+body2txt22.setAttribute('class', 'body2-txt1');
+body2txt22.setAttribute('id', 'body2-txt1-see2');
+body2txt22.textContent = 'Join CC Global Submit 2015';
+body2txt22.style.color = '#fff';
+body2txt22.style.fontFamily = 'Lato, sans-serif';
+body2txt22.style.textTransform = 'capitalize';
+body2txt22.style.padding = '5%';
+body2txt22.style.marginBottom = '8%';
+body2txt22.style.marginTop = '2%';
+body2txt22.style.fontSize = '1rem';
+body2txt22.style.fontStyle = 'bold';
+body2txt22.style.backgroundColor = '#ec5242';
+
 body2Section.appendChild(body2txt1);
 body2Section.appendChild(body2Hr);
 body2Section.appendChild(body2div1);
 body2Section.appendChild(body2txt2);
+body2Section.appendChild(body2txt22);
 body.appendChild(body2Section);
 
 const body3Section = document.createElement('section');
@@ -397,6 +457,33 @@ sec3Div.style.justifyContent = 'center';
 sec3Div.style.alignItems = 'center';
 sec3Div.style.gap = '0.5rem';
 sec3Div.setAttribute('class', 'section3-div');
+sec3Div.setAttribute('id', 'section3-div-id');
+
+const sec3BtmDiv = document.createElement('div');
+sec3BtmDiv.style.width = '80%';
+sec3BtmDiv.style.justifyContent = 'center';
+sec3BtmDiv.style.alignItems = 'center';
+sec3BtmDiv.style.gap = '1rem';
+sec3BtmDiv.style.margin = '1rem';
+sec3BtmDiv.style.padding = '1rem';
+sec3BtmDiv.style.border = '1px solid #d3d3d3';
+sec3BtmDiv.setAttribute('class', 'section3-bottom-div');
+sec3BtmDiv.setAttribute('id', 'section3-bottom-div-id');
+
+const sec3BtmDivTxt = document.createElement('p');
+sec3BtmDivTxt.style.display = 'flex';
+sec3BtmDivTxt.style.flexDirection = 'column';
+sec3BtmDivTxt.textContent = 'More';
+sec3BtmDivTxt.setAttribute('class', 'seaction3-second-div');
+
+const sec3BtmDivImg = document.createElement('img');
+sec3BtmDivImg.style.display = 'flex';
+sec3BtmDivImg.setAttribute('class', 'sec3BtmDivImg-img');
+sec3BtmDivImg.src = './Images/about_down_arrow.svg';
+sec3BtmDivImg.style.height = '10px';
+
+sec3BtmDiv.appendChild(sec3BtmDivTxt);
+sec3BtmDiv.appendChild(sec3BtmDivImg);
 
 function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrDesc) {
   const section3Div = document.createElement('div');
@@ -404,7 +491,6 @@ function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrD
   section3Div.setAttribute('class', 'seaction3-each-div');
   section3Div.style.backgroundColor = '#fff';
   section3Div.style.height = '100%';
-  section3Div.style.width = '40%';
 
   const section3Div1 = document.createElement('div');
   section3Div1.style.display = 'flex';
@@ -429,7 +515,6 @@ function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrD
 
   const section3Div2txt1 = document.createElement('p');
   section3Div2txt1.style.display = 'flex';
-  // section3Div2txt1.style.fontFamily = 'Lato, sans-serif';
   section3Div2txt1.style.fontFamily = 'COCOGOOSE, sans-serif';
   section3Div2txt1.setAttribute('class', 'body2-div-txt1');
   section3Div2txt1.textContent = spkrName;
@@ -440,7 +525,6 @@ function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrD
   const section3Div2txt2 = document.createElement('p');
   section3Div2txt2.style.display = 'flex';
   section3Div2txt2.style.fontFamily = 'Lato, sans-serif';
-  // section3Div2txt2.style.fontFamily= 'COCOGOOSE, sans-serif';
   section3Div2txt2.setAttribute('class', 'body2-div-txt2');
   section3Div2txt2.textContent = spkrTitle;
   section3Div2txt2.style.fontStyle = 'italic';
@@ -469,7 +553,6 @@ function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrD
   section3Div2.appendChild(section3Hr);
   section3Div2.appendChild(section3Div2txt3);
 
-  // section3Div1.appendChild(section3Div1Img1);
   section3Div1.appendChild(section3Div1Img);
   section3Div.appendChild(section3Div1);
   section3Div.appendChild(section3Div2);
@@ -484,13 +567,15 @@ for (let i = 0; i < data3.length; i += 1) {
 sec3TxtDiv.appendChild(body3txt1);
 sec3TxtDiv.appendChild(body3Hr);
 body3Section.appendChild(sec3TxtDiv);
+sec3Div.appendChild(sec3BtmDiv);
 body3Section.appendChild(sec3Div);
+
 body.appendChild(body3Section);
 
 const footerSection = document.createElement('section');
-footerSection.style.display = 'flex';
 footerSection.style.flexDirection = 'column';
 footerSection.setAttribute('class', 'section-footer');
+footerSection.setAttribute('id', 'section-footer-id');
 footerSection.style.height = '20%';
 footerSection.style.backgroundColor = '#f2f2f2';
 
@@ -507,7 +592,7 @@ footer1Div1.style.flexDirection = 'column';
 footer1Div1.style.width = '100%';
 footer1Div1.style.justifyContent = 'center';
 footer1Div1.style.alignItems = 'center';
-footer1Div1.style.gap = '0.5rem';
+footer1Div1.style.gap = '5%';
 footer1Div1.style.paddingTop = '2rem';
 footer1Div1.setAttribute('class', 'footer-div1');
 
@@ -535,7 +620,7 @@ footer1Div2.style.marginLeft = '3rem';
 footer1Div2.style.marginRight = '3rem';
 footer1Div2.style.marginBottom = '3rem';
 footer1Div2.style.marginTop = '3rem';
-footer1Div2.style.gap = '5rem';
+footer1Div2.style.gap = '5%';
 footer1Div2.setAttribute('class', 'footer-div1');
 
 for (let i = 0; i < 5; i += 1) {
@@ -558,7 +643,6 @@ for (let i = 0; i < 5; i += 1) {
     footer1Txt.style.fontWeight = '700';
     footer1Txt.style.fontStyle = 'bold';
     footer1Txt.style.color = '#ccc';
-    // body1txt2.style.fontFamily = 'COCOGOOSE, sans-serif';
   } else if (i === 1) {
     footer1Txt.textContent = 'Google';
     footer1Txt.style.fontFamily = 'sans-serif';
