@@ -398,7 +398,7 @@ body2Div2Part2.setAttribute('class', 'body2-div2');
 
 const body2Div2Part2Img1 = document.createElement('img');
 body2Div2Part2Img1.style.display = 'flex';
-body2Div2Part2Img1.src = '../Images/ccGlobalSummit.png';
+body2Div2Part2Img1.src = './Images/ccGlobalSummit.png';
 body2Div2Part2Img1.style.justifyContent = 'center';
 body2Div2Part2Img1.style.width = '100%';
 body2Div2Part2Img1.style.fontSize = '2rem';
@@ -448,7 +448,7 @@ secTwoPart1Lev1Div1.setAttribute('class', 'section2-part1-Level1-div1');
 
 const secTwoPart1Lev1Div1Img1 = document.createElement('img');
 secTwoPart1Lev1Div1Img1.style.display = 'flex';
-secTwoPart1Lev1Div1Img1.src = '../Images/concer11.png';
+secTwoPart1Lev1Div1Img1.src = './Images/concer11.png';
 secTwoPart1Lev1Div1Img1.style.justifyContent = 'center';
 secTwoPart1Lev1Div1Img1.style.width = '100%';
 secTwoPart1Lev1Div1Img1.style.fontSize = '2rem';
@@ -506,7 +506,7 @@ secTwoPart2Lev2Div1.setAttribute('id', 'section2-part2-Level2-div1-id');
 
 const secTwoPart2Lev2Div2Img1 = document.createElement('img');
 secTwoPart2Lev2Div2Img1.style.display = 'flex';
-secTwoPart2Lev2Div2Img1.src = '../Images/concer11.png';
+secTwoPart2Lev2Div2Img1.src = './Images/concer11.png';
 secTwoPart2Lev2Div2Img1.style.justifyContent = 'center';
 secTwoPart2Lev2Div2Img1.style.width = '100%';
 secTwoPart2Lev2Div2Img1.style.fontSize = '2rem';
@@ -525,7 +525,7 @@ secTwoPart2Lev2Div2.setAttribute('id', 'section2-part2-Level2-div2-id');
 
 const secTwoPart2Lev2Div2Img2 = document.createElement('img');
 secTwoPart2Lev2Div2Img2.style.display = 'flex';
-secTwoPart2Lev2Div2Img2.src = '../Images/concert22.png';
+secTwoPart2Lev2Div2Img2.src = './Images/concert22.png';
 secTwoPart2Lev2Div2Img2.style.justifyContent = 'center';
 secTwoPart2Lev2Div2Img2.style.width = '100%';
 secTwoPart2Lev2Div2Img2.style.fontSize = '2rem';
