@@ -99,7 +99,7 @@ The capstone is able to function (responsive to) both on the mobile and desktop 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://abiy006.github.io/Capstone-One/)
+- [Live Demo Link](https://abiy006.github.io/Capstone-1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
