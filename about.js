@@ -1,5 +1,11 @@
 const body = document.getElementById('body');
 
+const aboutNavLink = document.getElementById('about-nav-link');
+aboutNavLink.addEventListener('click', () => {
+  window.location.href = '/index.html';
+});
+
+
 const bodySection = document.createElement('section');
 bodySection.style.display = 'flex';
 bodySection.style.flexDirection = 'column';
@@ -285,13 +291,15 @@ body1txtdiv.style.width = '100%';
 const body1txt3 = document.createElement('p');
 body1txt3.style.display = 'flex';
 body1txt3.setAttribute('class', 'body1-txt');
-body1txt3.textContent = 'A joyful celebration believing in the value of openess joyful  elieving in the value of openess joyful celebration believing in the value of openess  celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the value of openess ';
+body1txt3.textContent = 'A joyful celebration believing in the value of openess joyful  elieving in the value of openess joyful celebration believing in the value of openess  celebration believing in the value of openess joyful elebration believiness joyful celebration believing in the value of opeue of openess joyful celebration believing in the value of openess joyful celebraieving in the value value of openess joyful celebration believing in the value of  tion bof openess openess joyful celebration believing in the value of openess  celebration believing in the value of openess joyful ng in the value of openess joyful celebration believing in the value of openess joyful celebration believing in the elieving in the value of openess joyful celebration bel';
 body1txt3.style.fontFamily = 'Lato, sans-serif';
 body1txt3.style.fontSize = '12px';
 body1txt3.style.width = '70%';
 body1txt3.style.justifyContent = 'center';
 body1txt3.style.alignItems = 'center';
 body1txt3.style.marginTop = '3%';
+body1txt3.style.lineHeight = '24px';
+body1txt3.style.textAlign = 'center';
 body1txt3.style.marginBottom = '4%';
 body1txt3.style.fontWeight = '500';
 body1txt3.style.fontStyle = 'normal';
@@ -548,7 +556,6 @@ footerSection.style.flexDirection = 'column';
 footerSection.setAttribute('class', 'section-footer');
 footerSection.setAttribute('id', 'section-footer-id');
 footerSection.style.height = '20%';
-// footerSection.style.backgroundColor = '#272a31';
 
 const footerSectionPart1 = document.createElement('div');
 footerSectionPart1.style.flexDirection = 'column';
@@ -664,7 +671,7 @@ footerSection.appendChild(footerSectionPart1);
 
 body.appendChild(footerSection);
 
-const footerSectionPart2 = document.createElement('div');
+const footerSectionPart2 = document.createElement('footer');
 footerSectionPart2.style.display = 'flex';
 footerSectionPart2.style.width = '100%';
 footerSectionPart2.style.marginTop = '2rem';
@@ -674,6 +681,7 @@ footerSectionPart2.style.alignItems = 'center';
 footerSectionPart2.style.gap = '2rem';
 footerSectionPart2.style.marginBottom = '3rem';
 footerSectionPart2.style.marginTop = '3rem';
+footerSectionPart2.style.minWidth = '500px';
 footerSectionPart2.setAttribute('class', 'footer-section-part2');
 footerSectionPart2.setAttribute('id', 'footer-section-part2-about-id');
 

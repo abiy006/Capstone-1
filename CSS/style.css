@@ -209,7 +209,7 @@ html {
   background-color: #f7f7f9;
   width: 100%;
   height: auto;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .section-body2 {

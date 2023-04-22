@@ -37,7 +37,7 @@
 
 # 📖 [ABIY-PORTFOLIO] <a name="about-project"></a>
 
-**[Abiy-Portfolio]** This is a capstone created during my Microverse course. 
+**[Abiy Capstone One]** This is a capstone created during my Microverse course. 
 The capstone is able to function (responsive to) both on the mobile and desktop version.
 
 - [Project Description Link](https://www.loom.com/share/4d72f614a9334efc9e8d2958394eafa6)
@@ -49,27 +49,8 @@ The capstone is able to function (responsive to) both on the mobile and desktop 
 <details>
   <summary>Technologies</summary>
   <ul>
-    <li><a href="https://html.com/">HTML</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Technologies</summary>
-  <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Technologies</summary>
-  <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/Javascript">Javascript</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Technologies</summary>
-  <ul>
     <li><a href="https://dart.dev/tools/linter-rules">LINTERS</a></li>
   </ul>
 </details>
@@ -90,10 +71,9 @@ The capstone is able to function (responsive to) both on the mobile and desktop 
 
 ### Key Features <a name="key-features"></a>
 
-- **[linter_implementation_with_html_css_javaScript]**
-- **[linter_implementation_with_gitignore]**
-- **[implementing_standard_readme_file]**
-- **[implementing_figma_design_background]**
+- **Responsive design for both Mobile and Desktop**
+- **Dynamic Data populated**
+- **Navigation menu is implemented**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,17 +114,17 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[linter_implementation_with_javascript]**
-- [ ] **[linter_implementation_with_html_css_javascript]**
-- [ ] **[linter_implementation_with_ruby]**
+- [ ] **More pictures and effectes will be added**
+- [ ] **Data will be used from database and used instade of Objects**
+- [ ] **More pages will be added to the project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Walkthrough
 
-Brife description of this portofolio walkthrough until at this point 
+Brife description of this capstone walkthrough until at this point
 
-- Walkthrough: [Project Walkthrough](https://www.loom.com/share/fb12380aa2964c4f9641a18f9aea6c19)
+- Walkthrough: [ Walkthrough](https://www.loom.com/share/fb12380aa2964c4f9641a18f9aea6c19)
 
 <!-- CONTRIBUTING -->
 
@@ -168,7 +148,9 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to Microverse for giving this inspiring project
+- **I would like to thank to Microverse for giving this inspiring project**
+
+- **I would also like to Credit to Cindy Shin the author of the original design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

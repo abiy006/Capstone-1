@@ -3,6 +3,11 @@ import data3 from './data2.js';
 
 const body = document.getElementById('body');
 
+const homeNavLink = document.getElementById('home-nav-link');
+homeNavLink.addEventListener('click', () => {
+  window.location.href = '/about.html';
+});
+
 const bodySection = document.createElement('section');
 bodySection.style.display = 'flex';
 bodySection.style.flexDirection = 'column';
@@ -10,7 +15,6 @@ bodySection.setAttribute('class', 'section-view-port');
 bodySection.setAttribute('id', 'section-view-port-id');
 bodySection.style.backgroundColor = '#aaa';
 bodySection.style.width = '100%';
-// bodySection.style.height = '100vh';
 
 const sectionMobileHeader = document.createElement('section');
 sectionMobileHeader.style.flexDirection = 'column';
@@ -167,7 +171,6 @@ for (let i = 0; i < 6; i += 1) {
   if (i === 0) {
     headerBottomUlLi.textContent = 'About';
     headerBottomUlLi.style.color = '#ec5242';
-
     headerBottomUlLi.addEventListener('click', () => {
       window.location.href = '/about.html';
     });
@@ -218,7 +221,7 @@ body1txt1.style.fontSize = '2rem';
 body1txt1.style.fontWeight = '400';
 body1div1.appendChild(body1txt1);
 
-const body1txt2 = document.createElement('p');
+const body1txt2 = document.createElement('h1');
 body1txt2.style.display = 'flex';
 body1txt2.setAttribute('class', 'body1-txt2');
 body1txt2.setAttribute('id', 'body1-txt2');
@@ -229,6 +232,7 @@ body1txt2.style.marginRight = '47%';
 body1txt2.style.marginLeft = '10%';
 body1txt2.style.fontSize = '3rem';
 body1txt2.style.fontWeight = '700';
+body1txt2.style.minWidth = '280px';
 body1txt2.style.fontStyle = 'bold';
 body1txt2.style.textTransform = 'uppercase';
 body1div1.appendChild(body1txt2);
@@ -286,7 +290,6 @@ body2Section.style.alignItems = 'center';
 body2Section.style.flexDirection = 'column';
 body2Section.setAttribute('class', 'section-body2');
 body2Section.style.width = '100%';
-// body2Section.style.height = '60vh';
 
 const body2txt1 = document.createElement('p');
 body2txt1.style.display = 'flex';
@@ -323,6 +326,14 @@ function fillMainProgram(incomDiv, proName, proImg, proDesc) {
   body2Div.style.backgroundColor = '#272a31';
   body2Div.style.height = '100%';
   body2Div.style.opacity = '0.8';
+  body2Div.onmouseover = function()
+  {
+    body2Div.style.border = '1px solid white';
+  };
+  body2Div.onmouseout = function()
+  {
+    body2Div.style.border = '1px solid #272a31';
+  };
 
   const body2Divtxt1 = document.createElement('p');
   body2Divtxt1.style.display = 'flex';
@@ -330,8 +341,9 @@ function fillMainProgram(incomDiv, proName, proImg, proDesc) {
   body2Divtxt1.setAttribute('class', 'body2-div-txt1');
   body2Divtxt1.textContent = proName;
   body2Divtxt1.style.color = '#ec5242';
-  body2Divtxt1.style.fontFamily = 'Lato, sans-serif';
+  body2Divtxt1.style.fontFamily = 'COCOGOOSE, sans-serif';
   body2Divtxt1.style.fontSize = '1rem';
+  body2Divtxt1.style.margin = '2rem';
   body2Divtxt1.style.fontStyle = 'normal';
 
   const body2Divtxt2 = document.createElement('p');
@@ -479,7 +491,6 @@ function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrD
   section3Div.setAttribute('class', 'seaction3-each-div');
   section3Div.style.backgroundColor = '#fff';
   section3Div.style.height = '100%';
-  // section3Div.style.width = '40%';
 
   const section3Div1 = document.createElement('div');
   section3Div1.style.display = 'flex';
@@ -504,7 +515,6 @@ function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrD
 
   const section3Div2txt1 = document.createElement('p');
   section3Div2txt1.style.display = 'flex';
-  // section3Div2txt1.style.fontFamily = 'Lato, sans-serif';
   section3Div2txt1.style.fontFamily = 'COCOGOOSE, sans-serif';
   section3Div2txt1.setAttribute('class', 'body2-div-txt1');
   section3Div2txt1.textContent = spkrName;
@@ -515,7 +525,6 @@ function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrD
   const section3Div2txt2 = document.createElement('p');
   section3Div2txt2.style.display = 'flex';
   section3Div2txt2.style.fontFamily = 'Lato, sans-serif';
-  // section3Div2txt2.style.fontFamily= 'COCOGOOSE, sans-serif';
   section3Div2txt2.setAttribute('class', 'body2-div-txt2');
   section3Div2txt2.textContent = spkrTitle;
   section3Div2txt2.style.fontStyle = 'italic';
@@ -544,7 +553,6 @@ function fillFeaturedSpeackers(incomSec3Div, spkrImg, spkrName, spkrTitle, spkrD
   section3Div2.appendChild(section3Hr);
   section3Div2.appendChild(section3Div2txt3);
 
-  // section3Div1.appendChild(section3Div1Img1);
   section3Div1.appendChild(section3Div1Img);
   section3Div.appendChild(section3Div1);
   section3Div.appendChild(section3Div2);
@@ -635,7 +643,6 @@ for (let i = 0; i < 5; i += 1) {
     footer1Txt.style.fontWeight = '700';
     footer1Txt.style.fontStyle = 'bold';
     footer1Txt.style.color = '#ccc';
-    // body1txt2.style.fontFamily = 'COCOGOOSE, sans-serif';
   } else if (i === 1) {
     footer1Txt.textContent = 'Google';
     footer1Txt.style.fontFamily = 'sans-serif';
