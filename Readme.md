@@ -2,7 +2,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="Images\html_css.png" alt="logo" width="140"  height="auto" />
+  <img src="Images\icon1.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Abiy Capston One Readme</b></h3>
